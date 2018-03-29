@@ -3,14 +3,11 @@ var express = require('express')
 
 
 
-router.get('/', (req, res) => {
-    res.send('Hello World!')
-})
+router.get('/', main)
 
+router.post('/user', addNewUser)
 
-router.get('/login', (req, res) => {
-    res.render('main')  
-})
+router.get('/login', loginUser)
 
 
 module.exports = router
