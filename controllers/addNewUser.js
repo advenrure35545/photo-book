@@ -6,7 +6,15 @@ module.exports = (req, res) => {
         pass: req.body.pass
     }
 
-    
+    var n_user = new User(user)
+
+
+    n_user.save((err) => {
+        if(err) return console.log(err)
+    })
+
+
+    res.json({user: n_user})    
 
 
 }

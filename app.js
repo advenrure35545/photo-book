@@ -12,6 +12,7 @@ var port = config.port
 
 app.set('view engine', 'hbs')
 app.use(express.static('public'))
+app.use(bodyParser.urlencoded({ extended: false }))
 
 hbs.registerPartials(__dirname + '/views/partials')
 
