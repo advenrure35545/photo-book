@@ -1,9 +1,5 @@
 var mongoose = require('mongoose')
 
-
-mongoose.connect('mongodb://admin:baranov200@ds121349.mlab.com:21349/photo-book')
-
-
 var Schema = mongoose.Schema
 
 var userSchema = new Schema({

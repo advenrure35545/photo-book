@@ -14,7 +14,7 @@ module.exports = (req, res) => {
     })
 
 
-    res.json({user: n_user})    
+       
 
 
 }
