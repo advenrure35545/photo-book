@@ -1,18 +1,31 @@
 {{>header}}
 
-<body>
-    <div class="op-layer"></div>
-    <div class="main-login-form">
-        <div class="form-wrapper">
-            <form action="/login" method="GET"> 
-                <div class="form-email-field">
-                    <input type="email" class="email-input" name="email-field">
+<div class="main-wrapper">
+    <header class="main-header">
+        <div class="container">
+            <div class="user-block">
+                <div class="user-ava-wrapper">
+                    <div class="ava-wrapper">
+                        <img src="/images/ava.jpg" alt="">
+                    </div>
                 </div>
-                <div class="form-pass-field">
-                    <input type="password" class="pass-input" name="pass-field">
-                </div> 
-                <button class="bt login-bt">Войти</button>              
-            </form>
+                <div class="user-info-wrapper">
+                    <div class="user-info-name">
+                        <span>Антон Черепов</span>
+                    </div>
+                    <div class="user-info-about">
+                        Я веб разработчик. Мне 24 года. Люблю путешествия
+                    </div>
+                    <div class="user-soc"></div>
+                </div>
+            </div>
         </div>
-    </div>    
-</body>
+        <div class="search-container">
+            <div class="container">
+                <div class="search-wrapper">
+                    <input type="text" class="search-input" value="Исследовать мир">
+                </div>
+            </div>
+        </div>
+    </header>
+</div>

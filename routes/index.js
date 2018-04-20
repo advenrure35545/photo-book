@@ -3,15 +3,18 @@ var express = require('express')
     main = require('../controllers/main')
     loginUser = require('../controllers/loginUser')
     addNewUser = require('../controllers/addNewUser')
+    feed = require('../controllers/feed')
     passport = require('passport')
 
 
 
 router.get('/', main)
 
+router.get('/feed', feed)
+
 router.post('/user', addNewUser)
 
-router.get('/login', loginUser)
+router.get('/entry', loginUser)
 
 router.post('/login', passport.authenticate('local', { successRedirect: '/', failureRedirect: '/login'}))
 

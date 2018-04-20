@@ -42,6 +42,11 @@ var router = require('./routes/index')
 
 app.use(router)
 
+app.use((err, req, res, next) => {
+    res.render('error')
+    next()
+})
+
 
 app.listen(port, () => {
     console.log(`Server running on port ${port}`)
